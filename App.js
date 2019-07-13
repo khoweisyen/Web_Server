@@ -26,7 +26,7 @@ App.use('/services', service_reqs);
 App.use('/accessories', access_reqs);
 
 App.use('*', (req, res) => {
-  res.status(404).send('Fuck you! No Data!');
+  res.status(404).send('No Data!');
 });
 
 var http = require('http');
